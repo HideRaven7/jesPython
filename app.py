@@ -18,7 +18,7 @@ from flask import send_from_directory
 app=Flask(__name__)
 
 # Crear una llave secreta 
-app.secret_key='dicresoft'
+app.secret_key='JES'
 
 # Crear una conexion a la de base de datos
 mysql=MySQL()
@@ -63,6 +63,28 @@ def e_refuerzo_videos():
 @app.route('/estudiante/libro/')
 def e_libro():
     return render_template('./estudiante/e-libro-refuerzo.html')
+
+# Admin
+
+@app.route('/admin/home')
+def a_home():
+    return render_template('./admin/a-home.html')
+
+@app.route('/admin/cursos')
+def a_cursos():
+    return render_template('./admin/a-curso.html')
+
+@app.route('/admin/materias')
+def a_materias():
+    return render_template('./admin/a-materias.html')
+
+@app.route('/admin/reportes')
+def a_reportes():
+    return render_template('./admin/a-reporte-curso.html')
+
+@app.route('/admin/reportes-profesor')
+def a_reportes_profesor():
+    return render_template('./admin/a-reporte-profesor.html')
 
 if __name__ == '__main__':
     app.run(port = 3000, debug=True)

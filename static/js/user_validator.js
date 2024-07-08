@@ -3,7 +3,7 @@ function usuario() {
     let password = document.getElementById("password").value;
 
     if (user === "admin" && password === "admin") {
-        window.location.href = "../admin/a-home.html";
+        window.location.href = "/admin/home";
     } else if (user === "estudiante" && password === "estudiante") {
         window.location.href = "Home/estudiante/";
     } else if (user === "profesor" && password === "profesor") {
