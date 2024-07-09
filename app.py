@@ -98,7 +98,6 @@ def p_material_estudio():
 def p_agregar_material():
     return render_template('/profesor/p-agregar-material.html')
 
-
 @app.route('/profesor/recuerdoEstudio')
 def p_recurso_estudio():
     return render_template('/profesor/p-recurso_estudio.html')
