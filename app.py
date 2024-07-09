@@ -66,6 +66,25 @@ def e_libro():
 
 # Profesor
 
+@app.route('/profesor/home/')
+def p_home():
+    return render_template('./profesor/p-home-a.html')
+
+@app.route('/profesor/perfil')
+def p_perfil():
+    return render_template('./profesor/p-perfil.html')
+
+@app.route('/profesor/refuerzo/libros/')
+def p_refuerzo_libros():
+    return render_template('./profesor/p-refuerzo-libros.html')
+
+@app.route('/profesor/refuerzo/libro/fuente Abriir/')
+def p_libro_refuerzo():
+    return render_template('./profesor/p-libro-refuerzo.html')
+
+@app.route('/profesor/refuerzo/videos')
+def p_refuerzo_videos():
+    return render_template('./profesor/p-refuerzo-videos.html')
 
 if __name__ == '__main__':
     app.run(port = 3000, debug=True)
