@@ -86,5 +86,33 @@ def a_reportes():
 def a_reportes_profesor():
     return render_template('./admin/a-reporte-profesor.html')
 
+@app.route('/admin/perfil')
+def a_reportes_profesor():
+    return render_template('./admin/a-perfil.html')
+
+@app.route('/admin/reportes-calificacion')
+def a_reportes_profesor():
+    return render_template('./admin/a-calificaciones-reporte.html')
+
+@app.route('/admin/reportes-asistencias')
+def a_reportes_profesor():
+    return render_template('./admin/a-asistencias-reporte.html')
+
+@app.route('/admin/registro-E')
+def a_reportes_profesor():
+    return render_template('./admin/a-formulario-registro-e.html')
+
+@app.route('/admin/registro-P')
+def a_reportes_profesor():
+    return render_template('./admin/a-formulario-registro-p.html')
+
+@app.route('/admin/profesores')
+def a_reportes_profesor():
+    return render_template('./admin/a-profesor-1_a.html')
+
+@app.route('/admin/horario')
+def a_reportes_profesor():
+    return render_template('./admin/a-horario-1a.html')
+
 if __name__ == '__main__':
     app.run(port = 3000, debug=True)
